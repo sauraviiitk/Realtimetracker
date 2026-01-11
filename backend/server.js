@@ -1,4 +1,6 @@
 const http=require('http');
+require("dotenv").config();
+
 const express=require('express');
 const app=express();
 const {Server}=require('socket.io');

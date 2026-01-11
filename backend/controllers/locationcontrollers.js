@@ -1,4 +1,6 @@
 const axios=require('axios');
+require("dotenv").config();
+
 exports.calculateDistanceAndEta=async (source,destination)=>{
 const apikey=process.env.ORS_API_KEY;
 const url="https://api.openrouteservice.org/v2/matrix/driving-car";
